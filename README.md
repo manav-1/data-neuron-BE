@@ -1,73 +1,44 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Project Documentation
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+This project is a Node.js application built with the NestJS framework and TypeScript. It uses Prisma as an ORM for database operations.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Project Structure
 
-## Description
+The main application code resides in the [`src/`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fmnt%2Fsda1%2Fprojs%2Fdata-neuron-backend%2Fsrc%2F%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%5D '/mnt/sda1/projs/data-neuron-backend/src/') directory. Here's a brief overview of the key files and directories:
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- `app.controller.ts`: This is where the application's main controller is defined.
+- `app.module.ts`: This is the main module of the application.
+- `app.service.ts`: This is the main service of the application.
+- `dto/app.dto.ts`: This file contains Data Transfer Objects (DTOs) used in the application.
+- `infra/prisma/`: This directory contains Prisma-related files, including migrations and the Prisma schema.
+- `main.ts`: This is the entry point of the application.
 
-## Installation
+## Setup
 
-```bash
-$ npm install
+Before running the application, make sure to install the dependencies by running:
+
+```sh
+npm install
 ```
 
-## Running the app
+## Running the Application
 
-```bash
-# development
-$ npm run start
+To start the application, run:
 
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+```sh
+npm start
 ```
 
-## Test
+## Linting
 
-```bash
-# unit tests
-$ npm run test
+The project uses ESLint for linting, with the TypeScript ESLint plugin. The configuration can be found in [`.eslintrc.js`](command:_github.copilot.openSymbolInFile?%5B%22.eslintrc.js%22%2C%22.eslintrc.js%22%5D '.eslintrc.js').
 
-# e2e tests
-$ npm run test:e2e
+## Database Migrations
 
-# test coverage
-$ npm run test:cov
-```
+Database migrations are handled by Prisma. The migrations will be located in [`src/infra/prisma/migrations/`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fmnt%2Fsda1%2Fprojs%2Fdata-neuron-backend%2Fsrc%2Finfra%2Fprisma%2Fmigrations%2F%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%5D '/mnt/sda1/projs/data-neuron-backend/src/infra/prisma/migrations/').
 
-## Support
+## Ignored Files
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+The [`.gitignore`](.gitignore) file lists the files and directories that are ignored by Git. This typically includes compiled output, logs, environment variable files, and IDE-specific files.
 
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+Please refer to the individual files for more detailed information.
