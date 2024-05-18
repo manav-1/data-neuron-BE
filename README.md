@@ -4,7 +4,7 @@ This project is a Node.js application built with the NestJS framework and TypeSc
 
 ## Project Structure
 
-The main application code resides in the [`src/`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fmnt%2Fsda1%2Fprojs%2Fdata-neuron-backend%2Fsrc%2F%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%5D '/mnt/sda1/projs/data-neuron-backend/src/') directory. Here's a brief overview of the key files and directories:
+The main application code resides in the [`src/`]('./data-neuron-backend/src/') directory. Here's a brief overview of the key files and directories:
 
 - `app.controller.ts`: This is where the application's main controller is defined.
 - `app.module.ts`: This is the main module of the application.
