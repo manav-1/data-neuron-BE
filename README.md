@@ -28,7 +28,7 @@ npm install
 To start the application, run:
 
 ```sh
-npm start
+npm start:dev
 ```
 
 ## Linting
